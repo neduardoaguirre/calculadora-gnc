@@ -1,0 +1,13 @@
+export const costoEquipo = document.querySelector('#costo-equipo');
+export const tanqueGnc = document.querySelector('#tanque-gnc');
+export const tanqueNafta = document.querySelector('#tanque-nafta');
+export const consumo = document.querySelector('#consumo');
+export const precioGnc = document.querySelector('#precio-gnc');
+export const precioNafta = document.querySelector('#precio-nafta');
+export const kmAnuales = document.querySelector('#km-anuales');
+export const formulario = document.querySelector('#formulario');
+export const datosFijos = document.querySelector('#datos-fijos');
+export const amortizacion = document.querySelector('#amortizacion');
+export const logo = document.querySelector('#logo');
+export const form = document.querySelector('#form');
+export const contenido = document.querySelector('#contenido');

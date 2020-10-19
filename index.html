@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Amortización GNC</title>
+    <link rel="shortcut icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h2 class="text-center my-5 titulo">Amortización GNC</h2>
+    <div class="container mt-5 p-5">
+        <div id="contenido" class="row">
+            <div class="col-md-12 col-lg-6 mx-auto" id="form">
+                <form id="formulario">
+                    <h3 class="mb-5 text-center">Ingrese Datos</h3>
+                    <div class="form-group row">
+                        <label class="col-sm-7 col-lg-7 col-form-label">Costo Equipo GNC ($)</label>
+                        <div class="col-sm-5 col-lg-5">
+                            <input type="text" id="costo-equipo" name="costo_equipo" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-7 col-lg-7 col-form-label">Tanque GNC (litros)</label>
+                        <div class="col-sm-5 col-lg-5">
+                            <input type="text" id="tanque-gnc" name="tanque_gnc" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-7 col-lg-7 col-form-label">Tanque de Nafta (litros)</label>
+                        <div class="col-sm-5 col-lg-5">
+                            <input type="text" id="tanque-nafta" name="tanque_nafta" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-7 col-lg-7 col-form-label">Consumo del Vehículo (litros /100 km)</label>
+                        <div class="col-sm-5 col-lg-5">
+                            <input type="text" id="consumo" name="consumo" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-7 col-lg-7 col-form-label">Precio m³ GNC ($)</label>
+                        <div class="col-sm-5 col-lg-5">
+                            <input type="text" id="precio-gnc" name="precio_gnc" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-7 col-lg-7 col-form-label">Precio Litro Nafta ($)</label>
+                        <div class="col-sm-5 col-lg-5">
+                            <input type="text" id="precio-nafta" name="precio_nafta" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-7 col-lg-7 col-form-label">Kilómetros recorridos anualmente</label>
+                        <div class="col-sm-5 col-lg-5">
+                            <input type="text" id="km-anuales" name="km_anuales" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success w-100 d-block">Calcular</button>
+                    </div>
+                </form>
+            </div>
+            <div class="mx-auto d-flex align-items-center" id="logo">
+                <figure class="figure">
+                    <img src="img/minion.png" class="figure-img img-fluid rounded" alt="">
+                </figure>
+            </div>
+            <div class="d-none" id="datos-fijos"></div>
+            <div class="d-none" id="amortizacion"></div>
+        </div>
+    </div>
+    <script src="js/app.js" type="module"></script>
+</body>
+
+</html>
